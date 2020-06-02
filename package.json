@@ -1,0 +1,23 @@
+{
+  "name": "@pigerla/copy-paste-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImPigerla/copy-paste-js.git"
+  },
+  "keywords": [
+    "copy",
+    "paste"
+  ],
+  "author": "wujj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ImPigerla/copy-paste-js/issues"
+  },
+  "homepage": "https://github.com/ImPigerla/copy-paste-js#readme"
+}
