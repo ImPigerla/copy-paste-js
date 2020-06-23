@@ -1,4 +1,4 @@
-let {distPath, srcPath, publicPath} = require('../config'),
+let {distPath,rootPath, srcPath, publicPath} = require('../config'),
   isProduct = process.env.NODE_ENV === 'production';
 
 console.log('======================== Is production mode:', isProduct, '========================');
@@ -16,12 +16,11 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        include: srcPath,
         use: 'babel-loader',
         exclude: file => (
           /node_modules/.test(file) &&
           !/\.vue\.js/.test(file)
-        )
+        ),
       }
     ]
   },
