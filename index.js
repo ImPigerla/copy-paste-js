@@ -1,6 +1,6 @@
 // 复制粘贴
-const execCommandCopy = (text) => {
-  return new Promise((resolve, reject) => {
+const execCommandCopy = function (text) {
+  return new Promise(function (resolve, reject) {
     const textArea = document.createElement("textarea");
     textArea.value = text;
     // Avoid scrolling to bottom
