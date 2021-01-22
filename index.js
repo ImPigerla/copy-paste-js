@@ -1,7 +1,7 @@
 // 复制粘贴
-const execCommandCopy = function (text) {
+var execCommandCopy = function (text) {
   return new Promise(function (resolve, reject) {
-    const textArea = document.createElement("textarea");
+    var textArea = document.createElement("textarea");
     textArea.value = text;
     // Avoid scrolling to bottom
     textArea.style.top = "0";
@@ -12,7 +12,7 @@ const execCommandCopy = function (text) {
     textArea.select();
 
     try {
-      const successful = document.execCommand("copy");
+      var successful = document.execCommand("copy");
       if (successful) {
         resolve(text);
       } else {
